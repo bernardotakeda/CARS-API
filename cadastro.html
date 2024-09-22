@@ -8,54 +8,89 @@
         * {
             margin: 0;
         }
-        .center-page {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+       /* Estilos da página central */
+.center-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1d3b2f; /* Cor de fundo mais suave e elegante */
+    color: #ffffff; /* Texto mais claro para contraste */
+}
 
-            background-color: #153020;
-            color: #000000;
-        }
+/* Agrupamento de inputs */
+.form-group {
+    display: flex;
+    flex-direction: column; /* Organiza os inputs um abaixo do outro */
+    gap: 15px; /* Espaçamento entre os inputs */
+    margin-bottom: 20px; /* Espaçamento abaixo do grupo de inputs */
+}
 
-        input {
-            background-color: #000000;
-            border: 1px solid #000000;
-            color: #ffffff;
-            padding: 7px;
-            border-radius: 5px;
-        }
+/* Estilos para os inputs */
+input {
+    background-color: #ffffff; /* Fundo branco para contraste */
+    border: 2px solid #1d3b2f; /* Borda combinando com o fundo */
+    color: #333333; /* Texto escuro */
+    padding: 10px;
+    border-radius: 8px; /* Bordas arredondadas suaves */
+    transition: all 0.3s ease;
+    width: 300px; /* Largura fixa para melhor visualização */
+}
 
-        button {
-            background-color: #000000;
-            padding: 7px;
-            border-radius: 50px;
-            color: #ffffff;
-            border: 1px solid #000000;
-            width: 100px;
-            cursor: pointer;
-        }
+input:focus {
+    outline: none;
+    border-color: #68c3a3; /* Destaque ao focar */
+}
 
-        .btn-transparent {
-          background-color: #000000;
-          color: #ffffff; 
-          border: none;
-          font-weight: 600;
-        }
-        .center {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        .containter-betwen {
-          display: flex;
-          align-items: flex-end;
-          height: 80px;
-          margin-bottom: 40px;
-          justify-content: space-between;
-          padding: 10px 0px;
-          border-bottom: 1px solid #000000;
-        }
+/* Estilos para os botões */
+button {
+    background-color: #68c3a3; /* Cor de destaque suave */
+    padding: 10px 15px;
+    border-radius: 30px;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #56a885; /* Efeito hover para melhorar a interação */
+}
+
+.btn-transparent {
+    background-color: transparent;
+    color: #68c3a3; 
+    border: 2px solid #68c3a3;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-transparent:hover {
+    background-color: #68c3a3; /* Destaque no hover */
+    color: #ffffff;
+}
+
+/* Centralizando elementos */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo do container entre */
+.containter-betwen {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    margin-bottom: 40px;
+    justify-content: space-between;
+    padding: 10px 0px;
+    border-bottom: 1px solid #ffffff; /* Borda mais clara */
+}
+
     </style>
 </head>
 <body class="center-page">
